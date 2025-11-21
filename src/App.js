@@ -359,7 +359,7 @@ export default function App() {
           display: "inline-block",
           marginLeft: 6,
           marginRight: 2,
-          background: "#15ebfaff",
+          background: "#1c965dff",
           borderRadius: 4,
           padding: "2px 6px",
           border: "none",
@@ -498,18 +498,18 @@ export default function App() {
   );
 }
 
-/* Styles */
+/* Updated Styles */
 const styles = {
   app: {
-    padding: 18,
+    padding: 20,
     fontFamily: "Inter, Arial, sans-serif",
-    background: "#fafafa",
+    background: "#f3f4f6", // softer background
     height: "100vh",
     boxSizing: "border-box",
   },
   container: {
     display: "flex",
-    gap: 18,
+    gap: 20,
     alignItems: "flex-start",
   },
   viewerColumn: {
@@ -520,8 +520,10 @@ const styles = {
     position: "relative",
     height: "78vh",
     minHeight: 560,
-    background: "#ffffffff",
-    border: "1px solid #e5e7eb",
+    background: "#ffffff",
+    borderRadius: 12,
+    border: "1px solid #d1d5db",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
     boxSizing: "border-box",
     overflow: "hidden",
   },
@@ -531,26 +533,34 @@ const styles = {
     padding: 12,
   },
   panelInner: {
-    background: "#103d5eff",
-    borderRadius: 8,
-    padding: 12,
-    border: "1px solid #333",
+    background: "#1f2937", // dark panel background
+    borderRadius: 12,
+    padding: 16,
+    border: "1px solid #374151",
     maxHeight: "78vh",
     overflowY: "auto",
-    color: "#fff",
+    color: "#f9fafb",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
   },
   panelContent: {
     whiteSpace: "pre-wrap",
-    color: "#fff",
+    color: "#f9fafb",
+    fontSize: 14,
+    lineHeight: 1.5,
   },
   pillButton: {
-    background: "#fff",
-    color: "#111",
+    background: "#3b82f6", // bright blue
+    color: "#fff",
     border: "none",
-    borderRadius: 8,
-    padding: "8px 12px",
-    fontWeight: 700,
+    borderRadius: 10,
+    padding: "8px 14px",
+    fontWeight: 600,
     cursor: "pointer",
-    boxShadow: "0 2px 0 rgba(0,0,0,0.08)",
+    boxShadow: "0 2px 6px rgba(0,0,0,0.12)",
+    transition: "all 0.2s ease",
+  },
+  pillButtonHover: {
+    background: "#2563eb",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.15)",
   },
 };
